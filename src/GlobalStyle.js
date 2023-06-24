@@ -18,8 +18,8 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-   scrollbar-color: rgb(98 84 243);
+    overflow-x: hidden;
+    scrollbar-color: rgb(98 84 243);
     scrollbar-width: thin;
 }
 
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
  
-  background: #fff;
+    background: #fff;
     border: 5px solid transparent;
     border-radius: 9px;
     background-clip: content-box;
@@ -48,7 +48,7 @@ h4 {
 }
 
 h1 {
-  color: ${({ theme }) => theme.colors.heading};
+  color: ${({theme}) => theme.colors.heading};
   font-size: 6rem;
   font-weight: 900;
 }
@@ -157,24 +157,23 @@ input, textarea{
     cursor: pointer;
     }
 
-@media (max-width: ${({ theme }) => theme.media.tab}) {
-    .container {
+@media (max-width: ${({theme}) => theme.media.tab}){
+  .container{
     max-width: 130rem;
     padding: 0 3.2rem;
   }
-  }
-
-   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-       html {
-      font-size: 50%;
-    }
-
+}
+@media (max-width: ${({theme}) => theme.media.mobile}){
+html{
+  font-size: 50%;
+}
+}
 .grid{
   gap: 3.2rem;
 }
       .grid-two-column , .grid-three-column, .grid-four-column{
           grid-template-columns: 1fr;
         }
-    }
+    
 
 `;
